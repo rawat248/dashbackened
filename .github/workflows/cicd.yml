@@ -27,4 +27,4 @@ jobs:
       - name: Delete old container
         run: docker rm -f nodejs-app-container  
       - name: Run Docker Container
-        run: docker run -d -p 8000:8000 --name nodejs-app-container -e MONGO_URL='mongodb+srv://varsha12:varsha1234@cluster0.qmwlhrv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0' varsha9611/nodejs-app
+        run: docker run -d -p 8000:8000 --name nodejs-app-container -e PORT=8000 -e MONGO_URL='mongodb+srv://varsha12:varsha1234@cluster0.qmwlhrv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0' varsha9611/nodejs-app
